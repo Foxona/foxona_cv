@@ -1,11 +1,12 @@
+"use client";
 import Image from "next/image";
 import Head from "next/head";
+import { FaTelegram, FaGithub, FaEnvelope, FaFilePdf } from "react-icons/fa";
 
 const ExperienceSection = () => {
-
   const myExperiences = [
     {
-      title: "Fullstack Developer | Bonda",
+      title: "Fullstack Developer, Bonda",
       date: "August 2022 - Present",
       description: [
         "Developed and maintained front-end and back-end for real-time browser games with websocket connection using MobX, Tailwind CSS, React, NextJS; with Express, Socket.io and MongoDB on the back end.",
@@ -15,7 +16,7 @@ const ExperienceSection = () => {
       ],
     },
     {
-      title: "Frontend Developer | Piar OÜ",
+      title: "Frontend Developer, Piar OÜ",
       date: "April 2022 - August 2022",
       description: [
         "Developed a website for warehouse management and manufacturing quality control (Material UI)",
@@ -25,7 +26,7 @@ const ExperienceSection = () => {
       ],
     },
     {
-      title: "Frontend Developer | Softway++",
+      title: "Frontend Developer, Softway++",
       date: "February 2021 - April 2022",
       description: [
         "Created the frontend portal for teachers, allowing them to create courses with articles, videos, quiz tests, and homework files.",
@@ -50,38 +51,75 @@ const ExperienceSection = () => {
   ));
 };
 
-export default function Home() {
-  const currentDate = new Date();
-  const currentMonth = currentDate.getMonth();
-  const currentYear = currentDate.getFullYear();
+const styles = {
+  link: "font-medium text-blue-600 dark:text-blue-500 hover:underline",
+};
 
+const handlePrint = () => {
+  window.print();
+};
+
+const links = [
+  {
+    name: "pdf",
+    icon: <FaFilePdf color="red" className="hover:cursor-pointer" size={28} onClick={handlePrint} />,
+  },
+  {
+    name: "email",
+    link: "mailto:sodeepspace@gmail.com",
+    icon: <FaEnvelope size={32} />,
+  },
+  {
+    name: "github",
+    link: "https://github.com/foxona",
+    icon: <FaGithub size={30} />,
+  },
+  {
+    name: "telegram",
+    link: "https://t.me/lucawio",
+    icon: <FaTelegram size={30} />,
+  },
+];
+
+const currentDate = new Date();
+const currentMonth = currentDate.getMonth();
+const currentYear = currentDate.getFullYear();
+
+export default function Home() {
   console.log(currentMonth, currentYear);
 
   return (
-    <div className="bg-gray-100 px-5 py-10 text-black">
+    <div className="bg-gray-100 px-5 py-10 text-black print:m-0 print:bg-inherit print:px-0 print:py-0">
       <Head>
         <title>Kirill Voronin</title>
       </Head>
-      <div className="mx-auto max-w-4xl rounded-md bg-white p-10 shadow-md">
+      <div className="mx-auto max-w-4xl rounded-md bg-white p-10 shadow-md print:p-0 print:shadow-none">
+        <div className="flex justify-between">
+          <div className="flex flex-col">
+            <h1 className="text-4xl font-bold">Kirill Voronin</h1>
+            <h2 className="text-2xl font-semibold">Front-End / Full-Stack Developer</h2>
+          </div>
 
-        <div className="flex justify-between items-center">
-          <h1 className="mb-5 text-4xl font-bold">Kirill Voronin</h1>
-          <h1 className="mb-5 text-2xl">June 2023, Amsterdam</h1>
+          <div className="mt-auto flex flex-col items-end">
+            <h1 className="text-xl">June 2023, Amsterdam</h1>
+            <a className="" href="tel:+31685230402">
+              +31 685230402
+            </a>
+            <div className="flex items-center gap-2 mt-2">
+              {links.map((link) => (
+                <a key={link.name} href={link.link} target="_blank">
+                  {link.icon}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
 
-        <h2 className="text-2xl font-semibold">Front End Developer</h2>
-        <div className="flex items-center gap-4">
-          {/* <a href="tel:+31685230402">+31 685230402</a> */}
-          <a className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="mailto:sodeepspace@gmail.com">sodeepspace@gmail.com</a>
-          <a className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="https://github.com/foxona">github.com/foxona</a>
-          <a className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="https://t.me/lucawio">t.me/lucawio</a>
-        </div>
-        <h3 className="text-xl font-semibold mt-3">Skills</h3>
+        <h3 className="mt-3 text-xl font-semibold">Skills</h3>
 
         <div>
-          <p>Web Development, JS, TS, React, NextJS</p>
-          <p>Express, MongoDB, Stripe, Websockets</p>
-          <p className="mb-5">HTML5, CSS, Tailwind, Material UI, Ant D</p>
+          <p>Web Development, JS, TS, Express, MongoDB, Stripe, Websockets</p>
+          <p className="mb-2">React, NextJS, HTML5, CSS, Tailwind, Material UI, Ant D</p>
         </div>
 
         <h3 className="mb-2 text-xl font-semibold">Experience</h3>

@@ -1,7 +1,6 @@
 "use client";
-import Image from "next/image";
 import Head from "next/head";
-import { FaTelegram, FaGithub, FaEnvelope, FaFilePdf, FaCircleEn } from "react-icons/fa";
+import { FaTelegram, FaGithub, FaFilePdf } from "react-icons/fa";
 
 const ExperienceSection = () => {
   const myExperiences = [

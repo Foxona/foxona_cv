@@ -96,12 +96,12 @@ const IconLinks = () => (
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 px-5 py-10 text-black print:m-0 print:bg-inherit print:px-0 print:py-0">
+    <div className="bg-gray-100 text-black print:m-0 print:bg-inherit print:px-0 print:py-0 md:px-5 md:py-10">
       <Head>
         <title>Kirill Voronin</title>
       </Head>
-      <div className="mx-auto max-w-4xl rounded-md bg-white p-10 shadow-md print:p-0 print:shadow-none">
-        <div className="flex flex-col justify-between  md:flex-row">
+      <div className="mx-auto max-w-4xl rounded-md bg-white p-4 shadow-md print:p-0 print:shadow-none md:p-10">
+        <div className="flex flex-col justify-between print:flex-row md:flex-row">
           <div className="flex flex-col">
             <h1 className="text-4xl font-bold">Kirill Voronin</h1>
             <h2 className="text-2xl font-semibold">
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col">
-            <div className="grow pt-2 md:pt-0">
+            <div className="pb-4 pt-2 md:pt-0">
               <div className="flex flex-col leading-4 md:items-end">
                 <h1 className="text-lg">June 2023, Amsterdam</h1>
                 <a className={styles.link} href="tel:+31685230402">

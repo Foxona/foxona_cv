@@ -41,15 +41,15 @@ const ExperienceSection = () => {
     <>
       <h3 className="mb-2 text-xl font-semibold">Experience</h3>
       {myExperiences.map((experience) => (
-    <div className="mb-5" key={experience.title}>
-      <h4 className="text-lg font-semibold">{experience.title}</h4>
-      <p>{experience.date}</p>
-      <ul className="list-disc pl-5">
-        {experience.description.map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>
-    </div>
+        <div className="mb-5" key={experience.title}>
+          <h4 className="text-lg font-semibold">{experience.title}</h4>
+          <p>{experience.date}</p>
+          <ul className="list-disc pl-5">
+            {experience.description.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </div>
       ))}
     </>
   );
@@ -66,13 +66,8 @@ const handlePrint = () => {
 const links = [
   {
     name: "pdf",
-    icon: <FaFilePdf color="red" className="hover:cursor-pointer" size={28} onClick={handlePrint} />,
+    icon: <FaFilePdf color="red" className="hover:cursor-pointer print:hidden" size={28} onClick={handlePrint} />,
   },
-  // {
-  //   name: "email",
-  //   link: "mailto:sodeepspace@gmail.com",
-  //   icon: <FaEnvelope size={32} />,
-  // },
   {
     name: "github",
     link: "https://github.com/foxona",
@@ -104,9 +99,44 @@ const IconLinks = () => (
   </div>
 );
 
+const SkillsSection = () => {
+  const skills = [
+    {
+      tagColor: "bg-secondary",
+      skills: ["React", "NextJS", "MobX", "Ant Design", "Material UI", "Tailwind", "HTML5", "CSS", "Styled Components", "Prettier"],
+    },
+    {
+      tagColor: "bg-secondary",
+      skills: ["NodeJS", "Express", "Socket.io", "MongoDB", "Mongoose", "AWS", "REST API", "Websockets", "Stripe"],
+    },
+    {
+      tagColor: "bg-secondary",
+      skills: ["TypeScript", "JavaScript", "Git"],
+    },
+  ] as const;
+  return (
+    <>
+      <h3 className="text-xl font-semibold">Skills</h3>
+      <div className="mb-4 flex flex-col gap-1 text-sm print:mb-2 print:flex-row md:flex-row md:text-base">
+        {skills.map(({ skills, tagColor }, i) => (
+          <div key={i} className="mt-2 flex flex-col print:mt-0 md:mr-5 md:mt-0">
+            <ul className="flex list-none flex-wrap gap-2 print:gap-1">
+              {skills.map((skill, i) => (
+                <li key={i} className={`whitespace-nowrap rounded-md px-2 py-0.5 print:px-0.5 print:py-0 ${tagColor}`}>
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
+
 export default function Home() {
   return (
-    <div className="bg-gray-100 text-black print:m-0 print:bg-inherit print:px-0 print:py-0 md:px-5 md:py-10">
+    <div className="bg-tile print:m-0 print:bg-inherit print:px-0 print:py-0 md:px-5 md:py-10">
       <Head>
         <title>Kirill Voronin</title>
       </Head>
@@ -120,7 +150,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col">
-            <div className="pb-4 pt-2 md:pt-0">
+            <div className="pb-4 pt-2 print:pb-0 print:pt-0 md:pt-0">
               <div className="flex flex-col print:items-end md:items-end">
                 <h1 className="text-lg">July 2023, Amsterdam</h1>
                 <a className={`${styles.link} leading-5`} href="mailto:sodeepspace@gmail.com">
@@ -135,14 +165,7 @@ export default function Home() {
           </div>
         </div>
 
-        <h3 className="mt-3 text-xl font-semibold">Skills</h3>
-
-        <div>
-          <p>Web Development, JS, TS, Express, MongoDB, Stripe, Websockets</p>
-          <p className="mb-2">React, NextJS, HTML5, CSS, Tailwind, Material UI, Ant D</p>
-        </div>
-
-        <h3 className="mb-2 text-xl font-semibold">Experience</h3>
+        <SkillsSection />
         <ExperienceSection />
       </div>
     </div>

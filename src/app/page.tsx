@@ -144,9 +144,7 @@ export default function Home() {
         <div className="flex flex-col justify-between print:flex-row md:flex-row">
           <div className="flex flex-col">
             <h1 className="text-4xl font-bold">Kirill Voronin</h1>
-            <h2 className="text-2xl font-semibold">
-              <span className="hidden md:inline">Front-End / </span>Full-Stack Developer
-            </h2>
+            <h2 className="text-2xl font-semibold">Full-Stack Developer</h2>
           </div>
 
           <div className="flex flex-col">

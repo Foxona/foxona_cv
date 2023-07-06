@@ -1,6 +1,6 @@
 "use client";
 import Head from "next/head";
-import { FaTelegram, FaGithub, FaFilePdf } from "react-icons/fa";
+import { FaTelegram, FaGithub, FaFilePdf, FaLinkedinIn } from "react-icons/fa";
 
 const ExperienceSection = () => {
   const myExperiences = [
@@ -37,7 +37,10 @@ const ExperienceSection = () => {
     },
   ];
 
-  return myExperiences.map((experience) => (
+  return (
+    <>
+      <h3 className="mb-2 text-xl font-semibold">Experience</h3>
+      {myExperiences.map((experience) => (
     <div className="mb-5" key={experience.title}>
       <h4 className="text-lg font-semibold">{experience.title}</h4>
       <p>{experience.date}</p>
@@ -47,7 +50,9 @@ const ExperienceSection = () => {
         ))}
       </ul>
     </div>
-  ));
+      ))}
+    </>
+  );
 };
 
 const styles = {
@@ -77,6 +82,11 @@ const links = [
     name: "telegram",
     link: "https://t.me/lucawio",
     icon: <FaTelegram size={30} />,
+  },
+  {
+    name: "linkedin",
+    link: "https://www.linkedin.com/in/foxona",
+    icon: <FaLinkedinIn size={30} />,
   },
 ];
 
@@ -111,13 +121,13 @@ export default function Home() {
 
           <div className="flex flex-col">
             <div className="pb-4 pt-2 md:pt-0">
-              <div className="flex flex-col leading-4 md:items-end">
-                <h1 className="text-lg">June 2023, Amsterdam</h1>
-                <a className={styles.link} href="tel:+31685230402">
-                  +31 685230402
-                </a>
-                <a className={styles.link} href="mailto:sodeepspace@gmail.com">
+              <div className="flex flex-col print:items-end md:items-end">
+                <h1 className="text-lg">July 2023, Amsterdam</h1>
+                <a className={`${styles.link} leading-5`} href="mailto:sodeepspace@gmail.com">
                   sodeepspace@gmail.com
+                </a>
+                <a className={`${styles.link} leading-5`} href="tel:+31685230402">
+                  +31 685230402
                 </a>
                 <IconLinks />
               </div>

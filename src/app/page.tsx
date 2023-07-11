@@ -31,13 +31,17 @@ const ExperienceSection = () => {
         "Created the frontend portal for teachers, allowing them to create courses with articles, videos, quiz tests, and homework files.",
         "Developed website section for students, allowing them to study and participate in courses with commenting.",
         "Collaborated with UX designers to implement user suggestions and improve the user experience of the web application.",
-        "Created custom UI components using React, Ant Design, resulting in a consistent and visually appealing design language across the web application.",
+        "Created custom UI components using React, and Ant Design, that transformed into useful dashboards in the web application.",
         "Continuously researched and experimented with new frontend technologies, such as Firebase, Effector, etc.",
       ],
     },
   ];
 
-  // TODO: Add "And more" at the end of the list, in the experience section allow to click on some words that will lead us to portfolio section
+  // TODO: Add "And more" at the end of the list,
+  // in the experience section allow to click on some words that will lead us to portfolio section,
+  // make a copy button near an email and phone number
+  // make a portofolio section
+  // adjust the design for mobile
 
   return (
     <>

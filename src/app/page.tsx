@@ -37,6 +37,8 @@ const ExperienceSection = () => {
     },
   ];
 
+  // TODO: Add "And more" at the end of the list, in the experience section allow to click on some words that will lead us to portfolio section
+
   return (
     <>
       <h3 className="mb-2 text-xl font-semibold">Experience</h3>
@@ -57,6 +59,7 @@ const ExperienceSection = () => {
 
 const styles = {
   link: "font-medium text-blue-600 dark:text-blue-500 hover:underline",
+  linkIcon: "hover:text-blue-600 hover:hover:underline",
 };
 
 const handlePrint = () => {
@@ -66,22 +69,22 @@ const handlePrint = () => {
 const links = [
   {
     name: "pdf",
-    icon: <FaFilePdf color="red" className="hover:cursor-pointer print:hidden" size={28} onClick={handlePrint} />,
+    icon: <FaFilePdf className="text-red-500 hover:cursor-pointer hover:text-red-400 print:hidden" size={28} onClick={handlePrint} />,
   },
   {
     name: "github",
     link: "https://github.com/foxona",
-    icon: <FaGithub size={30} />,
+    icon: <FaGithub className={styles.linkIcon} size={30} />,
   },
   {
     name: "telegram",
     link: "https://t.me/lucawio",
-    icon: <FaTelegram size={30} />,
+    icon: <FaTelegram className={styles.linkIcon} size={30} />,
   },
   {
     name: "linkedin",
     link: "https://www.linkedin.com/in/foxona",
-    icon: <FaLinkedinIn size={30} />,
+    icon: <FaLinkedinIn className={styles.linkIcon} size={30} />,
   },
 ];
 

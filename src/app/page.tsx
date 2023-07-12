@@ -49,7 +49,7 @@ const ExperienceSection = () => {
       <h3 className="mb-2 p-4 px-2 text-xl font-semibold">Experience</h3>
       {myExperiences.map((experience) => (
         <div className="mb-5 px-0" key={experience.title}>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col justify-between md:flex-row md:items-center">
             <h4 className="text-lg font-semibold">{experience.title}</h4>
             <span className="pr-5 text-gray-400">{experience.date}</span>
           </div>

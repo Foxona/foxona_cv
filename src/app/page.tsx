@@ -51,7 +51,7 @@ const ExperienceSection = () => {
         <div className="mb-5 px-0" key={experience.title}>
           <div className="flex flex-col justify-between md:flex-row md:items-center">
             <h4 className="text-lg font-semibold">{experience.title}</h4>
-            <span className="pr-5 text-gray-400">{experience.date}</span>
+            <span className="pr-5 text-gray-500">{experience.date}</span>
           </div>
           <ul className="mt-1 list-disc pl-5">
             {experience.description.map((item, i) => (

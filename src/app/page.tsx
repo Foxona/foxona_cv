@@ -8,7 +8,7 @@ const ExperienceSection = () => {
       title: "Fullstack Developer, Bonda",
       date: "August 2022 - Present",
       description: [
-        "Created and maintained both front-end and back-end for real-time browser games utilizing, Socket.io, MobX, Tailwind, React, NextJS, Express, MongoDB",
+        "Created and maintained both front-end and back-end for real-time browser games utilizing Socket.io, MobX, Tailwind, React, NextJS, Express, MongoDB",
         "Integrated third-party APIs and services into web applications, such as payment system (Stripe), AWS S3 for storage, SES for mailing, Sentry/Logtail for observability",
         "Developed game statistics overview for analytics using Notion API",
         "Collaborated with a team of designers and product managers to design and implement complex UI features, resulting in a more efficient and visually appealing application",
@@ -46,12 +46,12 @@ const ExperienceSection = () => {
 
   return (
     <>
-      <h3 className="mb-2 p-4 px-1 text-xl font-semibold">Experience</h3>
+      <h3 className="mb-2 p-4 px-2 text-xl font-semibold">Experience</h3>
       {myExperiences.map((experience) => (
         <div className="mb-5 px-0" key={experience.title}>
           <div className="flex items-center justify-between">
             <h4 className="text-lg font-semibold">{experience.title}</h4>
-            <span className="text-gray-400">{experience.date}</span>
+            <span className="pr-5 text-gray-400">{experience.date}</span>
           </div>
           <ul className="mt-1 list-disc pl-5">
             {experience.description.map((item, i) => (
@@ -126,7 +126,7 @@ const SkillsSection = () => {
   ] as const;
   return (
     <>
-      <h3 className="p-4 px-1 text-xl font-semibold">Skills</h3>
+      <h3 className="p-4 px-2 text-xl font-semibold">Skills</h3>
       <div className="mb-4 flex flex-col gap-1 px-0 text-sm print:mb-2 print:flex-row print:px-0 md:flex-row md:text-base">
         {skills.map(({ skills, tagColor }, i) => (
           <div key={i} className="mt-2 flex flex-col print:mt-0 md:mr-5 md:mt-0">

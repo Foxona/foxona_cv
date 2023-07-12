@@ -8,8 +8,8 @@ const ExperienceSection = () => {
       title: "Fullstack Developer, Bonda",
       date: "August 2022 - Present",
       description: [
-        "Created and maintained both front-end and back-end for real-time browser games with websocket connections, utilizing MobX, Tailwind CSS, React, NextJS, Express, Socket.io, and MongoDB",
-        "Integrated third-party APIs and services into web applications, such as payment system (Stripe), AWS S3 for storage, SES for mailing, Logtail for monitoring, Sentry for error tracking, etc.",
+        "Created and maintained both front-end and back-end for real-time browser games utilizing, Socket.io, MobX, Tailwind, React, NextJS, Express, MongoDB",
+        "Integrated third-party APIs and services into web applications, such as payment system (Stripe), AWS S3 for storage, SES for mailing, Sentry/Logtail for observability",
         "Developed game statistics overview for analytics using Notion API",
         "Collaborated with a team of designers and product managers to design and implement complex UI features, resulting in a more efficient and visually appealing application",
         "Optimized web application performance",
@@ -33,7 +33,7 @@ const ExperienceSection = () => {
         "Developed website section for students, allowing them to study and participate in courses with commenting",
         "Collaborated with UX designers to implement user suggestions and improve the user experience of the product",
         "Created custom UI components using React, and Ant Design, that transformed into useful dashboards",
-        "Continuously researched and experimented with new frontend technologies, such as Firebase, Effector, etc",
+        "Continuously researched and experimented with new frontend technologies, such as Firebase, Effector, and more",
       ],
     },
   ];
@@ -46,9 +46,9 @@ const ExperienceSection = () => {
 
   return (
     <>
-      <h3 className="mb-2 text-xl font-semibold">Experience</h3>
+      <h3 className="mb-2 p-4 px-0 text-xl font-semibold print:p-0">Experience</h3>
       {myExperiences.map((experience) => (
-        <div className="mb-5" key={experience.title}>
+        <div className="mb-5 px-0 print:px-0" key={experience.title}>
           <h4 className="text-lg font-semibold">{experience.title}</h4>
           <p>{experience.date}</p>
           <ul className="list-disc pl-5">
@@ -124,8 +124,8 @@ const SkillsSection = () => {
   ] as const;
   return (
     <>
-      <h3 className="text-xl font-semibold">Skills</h3>
-      <div className="mb-4 flex flex-col gap-1 text-sm print:mb-2 print:flex-row md:flex-row md:text-base">
+      <h3 className="p-4 px-0 text-xl font-semibold print:p-0">Skills</h3>
+      <div className="mb-4 flex flex-col gap-1 px-0 text-sm print:mb-2 print:flex-row print:px-0 md:flex-row md:text-base">
         {skills.map(({ skills, tagColor }, i) => (
           <div key={i} className="mt-2 flex flex-col print:mt-0 md:mr-5 md:mt-0">
             <ul className="flex list-none flex-wrap gap-2 print:gap-1">

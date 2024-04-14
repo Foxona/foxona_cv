@@ -5,14 +5,21 @@ import { FaTelegram, FaGithub, FaFilePdf, FaLinkedinIn } from "react-icons/fa";
 const ExperienceSection = () => {
   const myExperiences = [
     {
+      title: "Fullstack Developer, VeiligWerk",
+      date: "Jan 2023 - Present",
+      description: [
+        "Migrated a large web application for safety management in construction projects to React, Express, and PostgreSQL",
+        "Pioneered the use of TypeScript in the project, resulting in fewer bugs and improved development speed",
+        "Implemented a CI/CD pipeline for deploying applications",
+      ],
+    },
+    {
       title: "Fullstack Developer, Bonda",
-      date: "August 2022 - Present",
+      date: "August 2022 - Jan 2023",
       description: [
         "Created and maintained both front-end and back-end for real-time browser games utilizing Socket.io, MobX, Tailwind, React, NextJS, Express, MongoDB",
-        "Integrated third-party APIs and services into web applications, such as payment system (Stripe), AWS S3 for storage, SES for mailing, Sentry/Logtail for observability",
-        "Developed game statistics overview for analytics using Notion API",
+        "Integrated third-party APIs and services into web applications, such as payment system (Stripe), and Notion reports",
         "Collaborated with a team of designers and product managers to design and implement complex UI features, resulting in a more efficient and visually appealing application",
-        "Optimized web application performance",
       ],
     },
     {
@@ -22,7 +29,7 @@ const ExperienceSection = () => {
         "Built a website for warehouse management and manufacturing quality control (Material UI)",
         "Improved API ergonomics by working closely with backend developers, resulting in a more convenient and faster user experience",
         "Worked with project managers to prioritize development tasks, leading to a more efficient and productive development process",
-        "Developed a simple CI/CD pipeline for deploying applications on Vercel",
+        "Developed CI/CD pipelines for deploying applications to Vercel",
       ],
     },
     {

@@ -8,48 +8,39 @@ const ExperienceSection = () => {
       title: "Fullstack Developer, VeiligWerk",
       date: "Jan 2023 - Present",
       description: [
-        "Migrated a large web application for safety management in construction projects to React, Express, and PostgreSQL",
-        "Pioneered the use of TypeScript in the project, resulting in fewer bugs and improved development speed",
-        "Implemented a CI/CD pipeline for deploying applications",
+        "Took part in migrating a relatively large PHP web application for a construction site safety management system to a modern React + NodeJS/Express stack",
+        "Pioneered the use of TypeScript in the project, resulting in increased development speed",
+        "Played a key role in fixing complex bugs in the existing Javascript/React codebase",
       ],
     },
     {
       title: "Fullstack Developer, Bonda",
       date: "August 2022 - Jan 2023",
       description: [
-        "Created and maintained both front-end and back-end for real-time browser games utilizing Socket.io, MobX, Tailwind, React, NextJS, Express, MongoDB",
-        "Integrated third-party APIs and services into web applications, such as payment system (Stripe), and Notion reports",
-        "Collaborated with a team of designers and product managers to design and implement complex UI features, resulting in a more efficient and visually appealing application",
+        "Created and maintained both front-end and back-end for real-time browser games utilizing Socket.io, MobX (reactive programming), Tailwind, React, NextJS, Express, and MongoDB",
+        "Integrated the backend with business-critical APIs, such as Stripe for payment and trials, Notion, Google Analytics & Auth, and AWS SES, which led to a successful investment round",
+        "Collaborated with a team of designers and product managers to implement UI features, resulting in a more engaging and seamless user experience",
       ],
     },
     {
       title: "Frontend Developer, Piar OÜ",
       date: "April 2022 - August 2022",
       description: [
-        "Built a website for warehouse management and manufacturing quality control (Material UI)",
-        "Improved API ergonomics by working closely with backend developers, resulting in a more convenient and faster user experience",
-        "Worked with project managers to prioritize development tasks, leading to a more efficient and productive development process",
-        "Developed CI/CD pipelines for deploying applications to Vercel",
+        "Built a warehouse management and manufacturing quality control system (Material UI)",
+        "Introduced a more agile process by working closely with the management team",
+        "Reduced time to release by implementing CI/CD and switching to Vercel for deployment",
       ],
     },
     {
       title: "Frontend Developer, Softway++",
       date: "February 2021 - April 2022",
       description: [
-        "Created the frontend portal for teachers, allowing them to create courses with articles, videos, quiz tests, and homework files",
-        "Developed website section for students, allowing them to study and participate in courses with commenting",
-        "Collaborated with UX designers to implement user suggestions and improve the user experience of the product",
-        "Created custom UI components using React, and Ant Design, that transformed into useful dashboards",
-        "Continuously researched and experimented with new frontend technologies, such as Firebase, Effector, and more",
+        "Developed an extensive online education platform SPA with features such as courses, articles, videos, quiz tests, and homework files, using React, NextJS and Ant Design",
+        "Collaborated with UI designers to iterate on user feedback and improve the user experience",
+        "Continuously researched ways to simplify code using new frontend technologies such as Firebase, Effector, and more",
       ],
     },
   ];
-
-  // TODO: Add "And more" at the end of the list,
-  // in the experience section allow to click on some words that will lead us to portfolio section,
-  // make a copy button near an email and phone number
-  // make a portofolio section
-  // adjust the design for mobile
 
   return (
     <>

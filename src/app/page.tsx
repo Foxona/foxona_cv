@@ -158,7 +158,7 @@ export default function Home() {
           <div className="flex flex-col">
             <div className="pb-4 pt-2 print:pb-0 print:pt-0 md:pt-0">
               <div className="flex flex-col print:items-end md:items-end">
-                <h1 className="text-lg">July 2023, Amsterdam</h1>
+                <h1 className="text-lg">April 2024, Amsterdam</h1>
                 <a className={`${styles.link} leading-5`} href="mailto:sodeepspace@gmail.com">
                   sodeepspace@gmail.com
                 </a>

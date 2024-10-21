@@ -8,13 +8,13 @@ const ExperienceSection = () => {
       title: "Fullstack Developer, VeiligWerk",
       date: "Jan 2023 - Present",
       description: [
-"Released the construction safety management application to improve safety compliance on construction sites",
-"Migrated a legacy PHP web app to a modern React + NodeJS/Express stack, enhancing usability and maintainability for construction safety management",
-"Led and mentoring the team of 3 developers, contributing to team planning, and coordinating efforts across different departments",
+"Released the construction safety management application to clients, leading to improved safety compliance on construction sites",
+"Migrated a legacy PHP web app to a modern React + NodeJS/Express stack, enhancing usability and maintainability",
+"Led the team of 3 developers, contributing to team planning, and coordinating efforts across different departments",
 "Proposed and implemented solutions for project scalability and performance, including the introduction of TypeScript, which reduced defects and accelerated development",
-"Developed multiple frontend/full-stack modules in collaboration with designers/developers, often taking the lead in guiding their work and ensuring alignment with project goals",
+"Developed multiple frontend/full-stack modules in collaboration with designers and developers, often taking the lead in guiding their work and ensuring alignment with project goals",
 "Added Sentry and other debugging tools to improve error monitoring and reduce troubleshooting time",
-"Built custom development tools to enhance team productivity and streamline workflows",
+"Built custom development tools to enhance team productivity and streamline workflows"
       ],
     },
     {
@@ -115,11 +115,11 @@ const SkillsSection = () => {
   const skills = [
     {
       tagColor: "bg-secondary",
-      skills: ["React", "NextJS", "MobX", "Redux", "UI Frameworks", "Tailwind", "Vite", ],
+      skills: ["React", "NextJS", "MobX", "Redux", "UI Frameworks", "Tailwind CSS", "Vite", ],
     },
     {
       tagColor: "bg-secondary",
-      skills: ["NodeJS", "Express", "MongoDB", "MySQL", "Websockets", "AWS (storage, ci/cd)", "REST API", "GraphQL", "Stripe", "Strapi", "Notion API"],
+      skills: ["NodeJS", "Express", "MongoDB", "MySQL", "Websockets", "AWS (s3, ses)", "REST API", "GraphQL", "Stripe", "Strapi", "Notion API"],
     },
     {
       tagColor: "bg-secondary",

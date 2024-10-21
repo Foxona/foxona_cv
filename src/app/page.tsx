@@ -81,11 +81,11 @@ const links = [
     link: "https://github.com/foxona",
     icon: <FaGithub className={styles.linkIcon} size={30} />,
   },
-  {
-    name: "telegram",
-    link: "https://t.me/lucawio",
-    icon: <FaTelegram className={styles.linkIcon} size={30} />,
-  },
+  // {
+  //   name: "telegram",
+  //   link: "https://t.me/lucawio",
+  //   icon: <FaTelegram className={styles.linkIcon} size={30} />,
+  // },
   {
     name: "linkedin",
     link: "https://www.linkedin.com/in/foxona",
@@ -111,15 +111,15 @@ const SkillsSection = () => {
   const skills = [
     {
       tagColor: "bg-secondary",
-      skills: ["React", "NextJS", "MobX", "Ant Design", "Material UI", "Tailwind", "HTML5", "CSS", "Styled Components", "Prettier"],
+      skills: ["React", "NextJS", "MobX", "Redux", "UI Frameworks", "Tailwind", ""],
     },
     {
       tagColor: "bg-secondary",
-      skills: ["NodeJS", "Express", "Socket.io", "MongoDB", "Mongoose", "AWS", "REST API", "Websockets", "Stripe"],
+      skills: ["NodeJS", "Express", "MongoDB", "MySQL", "Websockets", "AWS (storage, ci/cd)", "REST API", "GraphQL", "Stripe"],
     },
     {
       tagColor: "bg-secondary",
-      skills: ["TypeScript", "JavaScript", "Git"],
+      skills: ["TypeScript", "JavaScript", "Python"],
     },
   ] as const;
   return (
@@ -158,7 +158,7 @@ export default function Home() {
           <div className="flex flex-col">
             <div className="pb-4 pt-2 print:pb-0 print:pt-0 md:pt-0">
               <div className="flex flex-col print:items-end md:items-end">
-                <h1 className="text-lg">April 2024, Amsterdam</h1>
+                <h1 className="text-lg">October 2024, Amsterdam</h1>
                 <a className={`${styles.link} leading-5`} href="mailto:sodeepspace@gmail.com">
                   sodeepspace@gmail.com
                 </a>

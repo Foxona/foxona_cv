@@ -1,9 +1,7 @@
 "use client";
 import Head from "next/head";
 import { FaTelegram, FaGithub, FaFilePdf, FaLinkedinIn } from "react-icons/fa";
-        "Migrating a large PHP web application for a construction site safety management system to a modern React + NodeJS/Express stack",
-        "Pioneering the use of TypeScript in the project, resulting in increased development speed",
-        "Playing a key role in fixing complex bugs in the existing Javascript/React codebase",
+
 const ExperienceSection = () => {
   const myExperiences = [
     {
@@ -14,8 +12,8 @@ const ExperienceSection = () => {
 "Migrated a legacy PHP web app to a modern React + NodeJS/Express stack, enhancing usability and maintainability for construction safety management",
 "Supported the team in a half-lead capacity, contributing to team planning, mentoring junior developers, and coordinating efforts across different departments",
 "Proposed and implemented solutions for project scalability and performance, including the introduction of TypeScript, which reduced defects and accelerated development",
-"Added Sentry and other debugging tools to improve error monitoring and reduce troubleshooting time",
 "Developed multiple modules in collaboration with colleagues, often taking the lead in guiding their work and ensuring alignment with project goals",
+"Added Sentry and other debugging tools to improve error monitoring and reduce troubleshooting time",
 "Built custom development tools to enhance team productivity and streamline workflows",
 "Played a major role in both frontend and backend development, ensuring a seamless connection between all project facets",
       ],

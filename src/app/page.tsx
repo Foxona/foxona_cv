@@ -119,7 +119,7 @@ const SkillsSection = () => {
     },
     {
       tagColor: "bg-secondary",
-      skills: ["NodeJS", "Express", "MongoDB", "MySQL", "Websockets", "AWS (s3, ses)", "REST API", "GraphQL", "Stripe", "Strapi", "Notion API"],
+      skills: ["NodeJS", "Express", "MongoDB", "MySQL", "Websockets", "AWS (S3, SES)", "REST API", "GraphQL", "Stripe", "Strapi", "Notion API"],
     },
     {
       tagColor: "bg-secondary",

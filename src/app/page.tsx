@@ -8,14 +8,13 @@ const ExperienceSection = () => {
       title: "Fullstack Developer, VeiligWerk",
       date: "Jan 2023 - Present",
       description: [
-"Released the construction safety management application, delivering a comprehensive solution to improve safety compliance on construction sites",
+"Released the construction safety management application to improve safety compliance on construction sites",
 "Migrated a legacy PHP web app to a modern React + NodeJS/Express stack, enhancing usability and maintainability for construction safety management",
-"Supported the team in a half-lead capacity, contributing to team planning, mentoring junior developers, and coordinating efforts across different departments",
+"Led and mentoring the team of 3 developers, contributing to team planning, and coordinating efforts across different departments",
 "Proposed and implemented solutions for project scalability and performance, including the introduction of TypeScript, which reduced defects and accelerated development",
-"Developed multiple modules in collaboration with colleagues, often taking the lead in guiding their work and ensuring alignment with project goals",
+"Developed multiple frontend/full-stack modules in collaboration with designers/developers, often taking the lead in guiding their work and ensuring alignment with project goals",
 "Added Sentry and other debugging tools to improve error monitoring and reduce troubleshooting time",
 "Built custom development tools to enhance team productivity and streamline workflows",
-"Played a major role in both frontend and backend development, ensuring a seamless connection between all project facets",
       ],
     },
     {
@@ -77,10 +76,10 @@ const handlePrint = () => {
 };
 
 const links = [
-  {
-    name: "pdf",
-    icon: <FaFilePdf className="text-red-500 hover:cursor-pointer hover:text-red-400 print:hidden" size={28} onClick={handlePrint} />,
-  },
+  // {
+  //   name: "pdf",
+  //   icon: <FaFilePdf className="text-red-500 hover:cursor-pointer hover:text-red-400 print:hidden" size={28} onClick={handlePrint} />,
+  // },
   {
     name: "github",
     link: "https://github.com/foxona",

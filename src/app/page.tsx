@@ -6,7 +6,7 @@ const ExperienceSection = () => {
   const myExperiences = [
     {
       title: "Fullstack Developer, VeiligWerk",
-      date: "Jan 2023 - Present",
+      date: "Nov 2023 - Present",
       description: [
 "Released the construction safety management application to clients, leading to improved safety compliance on construction sites",
 "Migrated a legacy PHP web app to a modern React + NodeJS/Express stack, enhancing usability and maintainability",
@@ -19,7 +19,7 @@ const ExperienceSection = () => {
     },
     {
       title: "Fullstack Developer, Bonda",
-      date: "August 2022 - Jan 2023",
+      date: "August 2022 - Nov 2023",
       description: [
         "Creating and maintaining both front-end and back-end for real-time browser games utilizing Socket.io, MobX (reactive programming), Tailwind, React, NextJS, Express, and MongoDB",
         "Integrating the backend with business-critical APIs, such as Stripe for payment and trials, Notion, Google Analytics & Auth, and AWS SES, which led to a successful investment round",

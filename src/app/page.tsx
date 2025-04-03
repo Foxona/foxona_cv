@@ -1,20 +1,30 @@
 "use client";
 import Head from "next/head";
-import { FaTelegram, FaGithub, FaFilePdf, FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
+import { FaGithub, FaFilePdf, FaLinkedinIn } from "react-icons/fa";
 
 const ExperienceSection = () => {
   const myExperiences = [
     {
-      title: "Fullstack Developer, VeiligWerk",
-      date: "Nov 2023 - Present",
+      title: "Self-Employed, Voronis BV",
+      href: "/voronis",
+      date: "Jan 2024 - Present",
       description: [
-"Released the construction safety management application to clients, leading to improved safety compliance on construction sites",
-"Migrated a legacy PHP web app to a modern React + NodeJS/Express stack, enhancing usability and maintainability",
-"Led the team of 3 developers, contributing to team planning, and coordinating efforts across different departments",
-"Proposed and implemented solutions for project scalability and performance, including the introduction of TypeScript, which reduced defects and accelerated development",
-"Developed multiple frontend/full-stack modules in collaboration with designers and developers, often taking the lead in guiding their work and ensuring alignment with project goals",
-"Added Sentry and other debugging tools to improve error monitoring and reduce troubleshooting time",
-"Built custom development tools to enhance team productivity and streamline workflows"
+        "Developing software solutions for a FinTech startup focusing on gamified investment",
+        "Manufacturing liaison services, including sourcing and procurement",
+      ],
+    },
+    {
+      title: "Fullstack Developer, VeiligWerk",
+      date: "Nov 2023 - Dec 2024",
+      description: [
+        "Released the construction safety management application to clients, leading to improved safety compliance on construction sites",
+        "Migrated a legacy PHP web app to a modern React + NodeJS/Express stack, enhancing usability and maintainability",
+        "Led the team of 3 developers, contributing to team planning, and coordinating efforts across different departments",
+        "Proposed and implemented solutions for project scalability and performance, including the introduction of TypeScript, which reduced defects and accelerated development",
+        "Developed multiple frontend/full-stack modules in collaboration with designers and developers, often taking the lead in guiding their work and ensuring alignment with project goals",
+        "Added Sentry and other debugging tools to improve error monitoring and reduce troubleshooting time",
+        "Built custom development tools to enhance team productivity and streamline workflows"
       ],
     },
     {
@@ -52,7 +62,9 @@ const ExperienceSection = () => {
       {myExperiences.map((experience) => (
         <div className="mb-5 px-0" key={experience.title}>
           <div className="flex flex-col justify-between print:flex-row print:items-center md:flex-row md:items-center">
-            <h4 className="text-lg font-semibold">{experience.title}</h4>
+            {experience.href ?
+              <Link href={experience.href} className="text-lg font-semibold hover:underline">{experience.title}</Link>
+              : <h4 className="text-lg font-semibold">{experience.title}</h4>}
             <span className="pr-5 text-gray-500">{experience.date}</span>
           </div>
           <ul className="mt-1 list-disc pl-5">
@@ -76,10 +88,10 @@ const handlePrint = () => {
 };
 
 const links = [
-  // {
-  //   name: "pdf",
-  //   icon: <FaFilePdf className="text-red-500 hover:cursor-pointer hover:text-red-400 print:hidden" size={28} onClick={handlePrint} />,
-  // },
+  {
+    name: "pdf",
+    icon: <FaFilePdf className="hover:cursor-pointer print:hidden" size={28} onClick={handlePrint} />,
+  },
   {
     name: "github",
     link: "https://github.com/foxona",
@@ -115,7 +127,7 @@ const SkillsSection = () => {
   const skills = [
     {
       tagColor: "bg-secondary",
-      skills: ["React", "NextJS", "MobX", "Redux", "UI Frameworks", "Tailwind CSS", "Vite", ],
+      skills: ["React", "NextJS", "MobX", "Redux", "UI Frameworks", "Tailwind CSS", "Vite",],
     },
     {
       tagColor: "bg-secondary",

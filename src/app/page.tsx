@@ -1,5 +1,4 @@
 "use client";
-import Head from "next/head";
 import Link from "next/link";
 import { FaGithub, FaFilePdf, FaLinkedinIn } from "react-icons/fa";
 
@@ -161,9 +160,6 @@ const SkillsSection = () => {
 export default function Home() {
   return (
     <div className="bg-tile print:m-0 print:bg-inherit print:px-0 print:py-0 md:px-5 md:py-10">
-      <Head>
-        <title>Kirill Voronin</title>
-      </Head>
       <div className="mx-auto max-w-4xl rounded-md bg-white p-4 shadow-md print:p-0 print:shadow-none md:p-10">
         <div className="flex flex-col justify-between print:flex-row md:flex-row">
           <div className="flex flex-col">

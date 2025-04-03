@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import Head from "next/head";
 import { FaMapMarkerAlt, FaBuilding, FaIdCard, FaEnvelope } from "react-icons/fa";
 
 export default function Voronis() {
@@ -13,6 +13,9 @@ export default function Voronis() {
 
   return (
     <div className="bg-tile print:m-0 print:bg-inherit print:px-0 print:py-0 md:px-5 md:py-10">
+      <Head>
+        <title>Voronis BV</title>
+      </Head>
       <div className="mx-auto max-w-4xl rounded-md bg-white p-4 shadow-md print:p-0 print:shadow-none md:p-10">
         <div className="flex flex-col justify-between">
           <div className="flex flex-col md:flex-row md:justify-between">
@@ -66,11 +69,6 @@ export default function Voronis() {
             </p>
           </div>
 
-          <div className="mt-6">
-            <Link href="/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">
-              Back to Home
-            </Link>
-          </div>
         </div>
       </div>
     </div>

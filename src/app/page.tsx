@@ -5,7 +5,7 @@ import { FaGithub, FaFilePdf, FaLinkedinIn } from "react-icons/fa";
 const ExperienceSection = () => {
   const myExperiences = [
     {
-      title: "Self-Employed, Voronis BV",
+      title: "Self-Employed, Voronis",
       href: "/voronis",
       date: "Jan 2024 - Present",
       description: [

@@ -14,13 +14,13 @@ export default function Voronis() {
   return (
     <div className="bg-tile print:m-0 print:bg-inherit print:px-0 print:py-0 md:px-5 md:py-10">
       <Head>
-        <title>Voronis BV</title>
+        <title>Voronis</title>
       </Head>
       <div className="mx-auto max-w-4xl rounded-md bg-white p-4 shadow-md print:p-0 print:shadow-none md:p-10">
         <div className="flex flex-col justify-between">
           <div className="flex flex-col md:flex-row md:justify-between">
             <div>
-              <h1 className="text-4xl font-bold">Voronis BV</h1>
+              <h1 className="text-4xl font-bold">Voronis</h1>
               <h2 className="text-2xl font-semibold">Software Consultancy & Manufacturing Liaison</h2>
             </div>
 
@@ -49,7 +49,7 @@ export default function Voronis() {
           <div className="mt-8">
             <h3 className="mb-4 text-xl font-semibold">About Voronis</h3>
             <p className="text-lg mb-6">
-              Voronis BV can provide specialized consultancy services that bridge the gap between digital
+              Voronis can provide specialized consultancy services that bridge the gap between digital
               solutions and physical production. Based in Amsterdam, we facilitate seamless connections
               between software systems and manufacturing processes, enabling businesses to optimize
               their operations without managing the complexities of production infrastructure.

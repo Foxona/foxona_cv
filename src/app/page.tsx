@@ -126,15 +126,15 @@ const SkillsSection = () => {
   const skills = [
     {
       tagColor: "bg-secondary",
-      skills: ["React", "NextJS", "MobX", "Redux", "UI Frameworks", "Tailwind CSS", "Vite",],
+      skills: ["React", "NextJS", "SolidJS" "MobX", "Redux", "Tailwind CSS", "Vite",
     },
     {
       tagColor: "bg-secondary",
-      skills: ["NodeJS", "Express", "MongoDB", "MySQL", "Websockets", "AWS (S3, SES)", "REST API", "GraphQL", "Stripe", "Strapi", "Notion API"],
+      skills: ["NodeJS", "Express", "MongoDB", "MySQL", "Websockets", "AWS", "REST API", "Rust", "Stripe", "Bevy"],
     },
     {
       tagColor: "bg-secondary",
-      skills: ["TypeScript", "JavaScript", "Python"],
+      skills: ["TypeScript", "JavaScript", "Rust"],
     },
   ] as const;
   return (

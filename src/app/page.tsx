@@ -50,11 +50,11 @@ const SkillsSection = () => {
     },
     {
       tagColor: "bg-secondary",
-      skills: ["NodeJS", "Express", "AWS", "GCP", "MySQL", "MongoDB", "Websockets", "Stripe"],
+      skills: ["NodeJS", "AWS", "GCP", "MySQL", "MongoDB", "Websockets", "Stripe"],
     },
     {
       tagColor: "bg-secondary",
-      skills: ["Bash", "Python", "Rust"],
+      skills: ["Bash", "Python"],
     },
   ] as const;
   return (

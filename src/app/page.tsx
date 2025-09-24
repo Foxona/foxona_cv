@@ -13,10 +13,6 @@ const handlePrint = () => {
 
 const links = [
   {
-    name: "pdf",
-    icon: <FaFilePdf className="hover:cursor-pointer print:hidden" size={28} onClick={handlePrint} />,
-  },
-  {
     name: "github",
     link: "https://github.com/foxona",
     icon: <FaGithub className={styles.linkIcon} size={30} />,

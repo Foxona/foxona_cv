@@ -124,7 +124,7 @@ const ExperienceSection = () => {
       date: "Dec 2024 - Sep 2025",
       description: [
         "Developed and released a Web3 multiplayer game using SolidJS, Vite, Tailwind",
-        "Implemented mobile game UI in Rust and Bevy (Lunex, Hui)",
+        "Implemented mobile game UI in Rust and Bevy, compiled to WASM",
         "Set up GitLab CI pipelines to deploy containers to Kubernetes and Nomad",
         "Secured Web Application with Google Identity-Aware Proxy across multiple environments",
       ],

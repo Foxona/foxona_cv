@@ -131,7 +131,7 @@ const ExperienceSection = () => {
     },
     {
       title: "Fullstack Developer, VeiligWerk",
-      date: "Nov 2023 - Dec 2024",
+      date: "Nov 2023 - Nov 2024",
       description: [
         "Released construction safety management application, improving on‑site compliance",
         "Migrated a legacy PHP/MySQL codebase to React + Node/ExpressJS + TypeScript, raising developer velocity and maintainability",

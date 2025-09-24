@@ -54,7 +54,7 @@ const SkillsSection = () => {
     },
     {
       tagColor: "bg-secondary",
-      skills: ["Bash", "Python", "Rust", "Go"],
+      skills: ["Bash", "Python", "Rust"],
     },
   ] as const;
   return (
